@@ -1,14 +1,72 @@
-    layout {
-        gaps 16 // Gap between windows
-        center-focused-column "never" // Don’t auto-center focused column
+// English: https://github.com/niri-wm/niri/wiki/Configuration:-Layout
+// 中文: https://docs.akass.cn/niri/Configuration%3A-Layout.html
 
-        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+// TODO: color will be modify by noctalia theme template?
 
-        preset-column-widths {
-            proportion 0.33333
-            proportion 0.5
-            proportion 0.66667
-        }
+layout {
+    gaps 16
 
-        struts {}
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
     }
+
+    // If you leave the brackets empty, the windows themselves will decide their initial width.
+    default-column-width {}
+
+
+    focus-ring {
+        // Uncomment this line to disable the focus ring.
+        // off
+
+        // How many logical pixels the ring extends out from the windows.
+        width 4
+
+        active-color "#7fc8ff"
+
+        inactive-color "#505050"
+
+        // TODO: gradients
+
+    }
+
+    // You can also add a border. It's similar to the focus ring, but always visible.
+    border {
+        // The settings are the same as for the focus ring.
+        // If you enable the border, you probably want to disable the focus ring.
+        off
+
+        width 2
+        active-color "#ffc87f"
+        inactive-color "#505050"
+
+        urgent-color "#9b0000"
+
+        // TODO: gradients
+
+    }
+
+    // You can enable drop shadows for windows.
+    shadow {
+
+        on
+
+        softness 30
+
+        spread 5
+
+        offset x=0 y=5
+
+        color "#0007"
+    }
+
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}
