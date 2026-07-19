@@ -15,8 +15,31 @@
         opacity 0.85
     }
 
+    // we think that these rules are useful for most users, so don't modify it.
+    // add custom rules in ./custom/rules.kdl
 
     // windows special rules
+
+    // TODO: add chrome
+    // Open the Firefox picture-in-picture player as floating by default.
+    window-rule {
+        // This app-id regular expression will work for both:
+        // - host Firefox (app-id is "firefox")
+        // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+        match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+        open-floating true
+    }
+
+    // Block out two password managers from screen capture.
+    window-rule {
+        match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+        match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+        block-out-from "screen-capture"
+
+        // Use this instead if you want them visible on third-party screenshot tools.
+        // block-out-from "screencast"
+    }
 
     // Floating Noctalia settings window.
     window-rule {
@@ -46,3 +69,5 @@
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
+
+    include optional=true "./custom/rules.kdl"
