@@ -1,9 +1,33 @@
+    // global window rules
     window-rule {
-        geometry-corner-radius 20 // Set every window radius to 20
+        geometry-corner-radius 12
         clip-to-geometry true
+        draw-border-with-background false
+        opacity 0.9
+        background-effect {
+            blur true
+            xray true
+        }
     }
 
-     // if you use steam you will probably like these
+    window-rule {
+        match is-focused=false
+        opacity 0.85
+    }
+
+
+    // windows special rules
+
+    // Floating Noctalia settings window.
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
+    }
+
+    // if you use steam you will probably like these
+    // 虽然我在 Linux 上没有 steam
     window-rule {
         match app-id="steam"
         exclude title=r#"^[Ss]team$"#
@@ -15,6 +39,8 @@
        default-floating-position x=10 y=10 relative-to="bottom-right"
        open-focused false
     }
+
+    // layers special rules
 
     layer-rule {
         match namespace="^noctalia-wallpaper*"
