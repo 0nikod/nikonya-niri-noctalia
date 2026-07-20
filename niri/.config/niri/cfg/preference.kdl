@@ -1,0 +1,30 @@
+// wallpaper settings
+// English: https://docs.noctalia.dev/v5/compositor-settings/niri/?section=wallpapers-setup#wallpapers-setup
+// Option 1: Blurred Overview Wallpaper
+    layer-rule {
+        match namespace="^noctalia-backdrop"
+        place-within-backdrop true
+    }
+
+// Option 2: Stationary Wallpaper
+    // // Place the regular wallpaper on the backdrop.
+    /-layer-rule {
+    match namespace="^noctalia-wallpaper"
+    place-within-backdrop true
+    }
+    // // Set transparent workspace background color so the backdrop is visible at all times.
+    /-layout {
+        background-color "transparent"
+    }
+    // // Optionally, disable workspace shadows in the overview.
+    /-overview {
+        workspace-shadow {
+            off
+        }
+    }
+
+// // Option 3: Flat Colored Overview
+    /-overview {
+    // Choose your favorite color.
+        backdrop-color "#26233a"
+    }

@@ -16,7 +16,7 @@
     }
 
     // we think that these rules are useful for most users, so don't modify it.
-    // add custom rules in ./custom/rules.kdl
+    // add custom rules in custom/rules.kdl
 
     // windows special rules
 
@@ -65,18 +65,4 @@
 
     // layers special rules
 
-    // noctalia wallpaper rules
-    // English: https://docs.noctalia.dev/v5/compositor-settings/niri/?section=wallpapers-setup#wallpapers-setup
     
-    // Blurred Overview Wallpaper
-    layer-rule {
-        match namespace="^noctalia-backdrop"
-        place-within-backdrop true
-    }
-
-    // Stationary Wallpaper
-    // TODO
-    // layer-rule {
-    //     match namespace="^noctalia-wallpaper"
-    //     place-within-backdrop true
-    // }
