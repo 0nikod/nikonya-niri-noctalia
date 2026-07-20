@@ -1,0 +1,8 @@
+include "./base/animation.kdl"
+include "./base/autostart.kdl"
+include "./base/keybinds.kdl"
+include "./base/input.kdl"
+include "./base/display.kdl"
+include "./base/layout.kdl"
+include "./base/rules.kdl"
+include "./base/misc.kdl"

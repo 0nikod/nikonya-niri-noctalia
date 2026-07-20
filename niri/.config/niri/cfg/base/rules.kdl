@@ -65,9 +65,18 @@
 
     // layers special rules
 
+    // noctalia wallpaper rules
+    // English: https://docs.noctalia.dev/v5/compositor-settings/niri/?section=wallpapers-setup#wallpapers-setup
+    
+    // Blurred Overview Wallpaper
     layer-rule {
-        match namespace="^noctalia-wallpaper*"
+        match namespace="^noctalia-backdrop"
         place-within-backdrop true
     }
 
-    include optional=true "./custom/rules.kdl"
+    // Stationary Wallpaper
+    // TODO
+    // layer-rule {
+    //     match namespace="^noctalia-wallpaper"
+    //     place-within-backdrop true
+    // }
