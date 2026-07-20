@@ -127,20 +127,15 @@ binds {
     CTRL+ALT+Delete                     { quit; } // Also quits Niri
     Mod+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     Mod+O                               repeat=false { toggle-overview; }
-}
-
-binds {
 
     // Core Noctalia binds
-    Mod+Space                           { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+S                               { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Comma                           { spawn-sh "noctalia msg settings-toggle"; }
-    Alt+Tab                             { spawn-sh "noctalia msg window-switcher"; }
+    Mod+Space                           hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+S                               hotkey-overlay-title="Open Control Center: noctalia controlCenter" { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Alt+Tab                             hotkey-overlay-title="Open Window Switcher: noctalia window-switcher" { spawn-sh "noctalia msg window-switcher"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.
 
     // // ─── Applications ───
     Mod+Shift+Return                    hotkey-overlay-title="Open Wallpaper Selector: noctalia wallpaper toggle" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Mod+S                               hotkey-overlay-title="Open Control Center: noctalia controlCenter" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Shift+S                         hotkey-overlay-title="Open Settings: noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
     Mod+CTRL+Return                     hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
@@ -178,10 +173,6 @@ binds {
     // // Old keybinds for the old noctalia-shell. You can remove these if you want.
     // XF86MonBrightnessUp                 allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
     // XF86MonBrightnessDown               allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
-
-}
-
-binds {
 
     // // Please select your custom programs.
     // Mod+Return                          hotkey-overlay-title="Open Terminal: Alacritty" { spawn "alacritty"; }
