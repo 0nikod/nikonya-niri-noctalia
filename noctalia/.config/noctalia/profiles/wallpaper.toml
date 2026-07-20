@@ -1,0 +1,18 @@
+[wallpaper]
+enabled             = true
+fill_mode           = "crop"    # 居中 | 裁剪 | 适应 | 拉伸 | 平铺 | 跨屏
+fill_color          = "#111111" # 可选的备用/填充颜色；图片壁纸优先
+transition          = ["fade", "wipe", "disc", "stripes", "zoom", "honeycomb"]
+                                # 每次过渡时随机选择的效果数组
+                                # 留空则使用全部效果
+transition_duration = 1500      # 毫秒
+edge_smoothness     = 0.3       # 0.0 – 1.0
+transition_on_startup = false   # 是否在 Shell 启动时为第一张壁纸添加动画（v4 风格）
+
+# 壁纸选择面板浏览的目录
+directory           = "~/Wallpapers"
+# 主题感知目录（当主题模式为“浅色/深色”时使用；“自动”模式回退到 directory）
+directory_light     = "~/Wallpapers/Light"
+directory_dark      = "~/Wallpapers/Dark"
+# 是否启用按显示器目录覆盖（默认：false）
+per_monitor_directories = false
