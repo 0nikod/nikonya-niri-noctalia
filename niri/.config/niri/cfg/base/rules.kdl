@@ -3,7 +3,7 @@
         geometry-corner-radius 12
         clip-to-geometry true
         draw-border-with-background false
-        opacity 0.9
+        opacity 0.95
         background-effect {
             blur true
             xray true
@@ -12,7 +12,7 @@
 
     window-rule {
         match is-focused=false
-        opacity 0.85
+        opacity 0.9
     }
 
     // we think that these rules are useful for most users, so don't modify it.
