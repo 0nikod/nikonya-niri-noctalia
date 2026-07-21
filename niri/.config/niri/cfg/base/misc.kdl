@@ -15,6 +15,14 @@
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
+
+        QT_IM_MODULES "wayland"
+        QT_IM_MODULE "fcitx"
+        XMODIFIERS "@im=fcitx"
+        // 在 ~/.config/gtk-3.0/settings.ini 和 ~/.config/gtk-4.0/settings.ini 中设置
+        // [Settings]
+        // gtk-im-module=fcitx
+
     }
 
     cursor {
