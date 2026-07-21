@@ -7,5 +7,5 @@ sudo stow --target="/" --verbose etc
 
 stow --target="$HOME" --verbose fastfetch
 stow --target="$HOME" --verbose niri
+stow --target="$HOME" --verbose kitty
 stow --target="$HOME" --verbose noctalia
-
