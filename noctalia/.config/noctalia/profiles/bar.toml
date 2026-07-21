@@ -1,0 +1,23 @@
+[bar]
+order = ["bar"]
+
+[bar.bar]
+background_opacity      = 0.0
+border_width            = 0.0
+
+color = "primary"
+icon_color = "tertiary"
+
+start = ["launcher", "workspaces", "active_window"]
+center = ["clock"]
+end = ["media", "tray", "wallpaper", "network", "bluetooth", "volume", "battery", "notifications", "session"]
+
+
+capsule                 = true
+capsule_fill            = "surface_variant"
+# capsule_foreground      = "on_surface_variant"
+# capsule_border          = "outline"
+capsule_opacity         = 0.8
+capsule_padding         = 6.0
+capsule_thickness       = 0.95
+
