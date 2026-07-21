@@ -1,3 +1,3 @@
-
-
+include optional=true "./custom/display.kdl"
+include optional=true "./custom/misc.kdl"
 include optional=true "./custom/rules.kdl"
