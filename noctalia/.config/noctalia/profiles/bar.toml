@@ -10,7 +10,7 @@ icon_color = "tertiary"
 
 start = ["launcher", "workspaces", "active_window"]
 center = ["clock"]
-end = ["media", "tray", "screenshot", "wallpaper", "network", "bluetooth", "volume", "battery", "notifications", "session"]
+end = ["media", "tray", "clipboard" , "screenshot", "wallpaper", "network", "bluetooth", "volume", "battery", "notifications", "session"]
 
 
 capsule                 = true

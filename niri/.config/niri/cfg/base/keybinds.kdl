@@ -134,7 +134,10 @@ binds {
     Alt+Tab                             hotkey-overlay-title="Open Window Switcher: noctalia window-switcher" { spawn-sh "noctalia msg window-switcher"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.
 
-    // // ─── Applications ───
+    // Bar
+    Mod+V                               { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+
+    // ─── Applications ───
     Mod+Shift+Return                    hotkey-overlay-title="Open Wallpaper Selector: noctalia wallpaper toggle" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     Mod+Shift+S                         hotkey-overlay-title="Open Settings: noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
     Mod+CTRL+Return                     hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
