@@ -41,25 +41,6 @@
         // block-out-from "screencast"
     }
 
-    // Floating Noctalia settings window.
-    window-rule {
-        match app-id="dev.noctalia.Noctalia"
-        open-floating true
-        default-column-width { fixed 1080; }
-        default-window-height { fixed 920; }
-    }
-
-    layer-rule {
-        match namespace="^noctalia-bar.*"
-        opacity 1.0
-        geometry-corner-radius 0
-        shadow { off; }
-        background-effect {
-            blur false
-            // xray true // 可选：如果开启，只模糊背后的壁纸，性能更好且通常观感更干净
-    }
-}
-
     // if you use steam you will probably like these
     // 虽然我在 Linux 上没有 steam
     window-rule {
@@ -69,11 +50,27 @@
     }
 
     window-rule {
-       match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
-       default-floating-position x=10 y=10 relative-to="bottom-right"
-       open-focused false
+        match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+        default-floating-position x=10 y=10 relative-to="bottom-right"
+        open-focused false
     }
 
-    // layers special rules
+    window-rule {
+        match app-id=r"^steam_app_.*"   // 匹配所有 Steam 游戏（原生或 Proton）
+        match app-id=r"^gamescope$"     // 匹配 Gamescope 微型合成器
+        
+        open-fullscreen true
 
+        opacity 1.0
+
+        background-effect {
+            blur false
+        }
+
+        draw-border-with-background false
+    }
+
+    // add special rules here
+    include "rules/osu.kdl"
+    include "rules/noctalia.kdl"
     

@@ -1,0 +1,18 @@
+    // Floating Noctalia settings window.
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
+    }
+
+    layer-rule {
+        match namespace="^noctalia-bar.*"
+        opacity 1.0
+        geometry-corner-radius 0
+        shadow { off; }
+        background-effect {
+            blur false
+            // xray true // 可选：如果开启，只模糊背后的壁纸，性能更好且通常观感更干净
+        }
+    }

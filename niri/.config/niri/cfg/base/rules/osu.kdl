@@ -1,0 +1,17 @@
+    window-rule {
+
+        match title=r"osu!"
+
+        open-fullscreen true
+
+        // TODO: tearing from https://github.com/Smithay/smithay/pull/1948
+
+        opacity 1.0
+
+        background-effect {
+            blur false
+        }
+
+        draw-border-with-background false
+        
+    }
