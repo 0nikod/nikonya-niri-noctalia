@@ -3,3 +3,5 @@ enabled = true
 reserve_space = false
 show_dots = true
 smart_auto_hide = true
+
+launcher_position = "start"
