@@ -16,6 +16,7 @@
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
 
+        // 输入法
         QT_IM_MODULES "wayland"
         QT_IM_MODULE "fcitx"
         XMODIFIERS "@im=fcitx"
