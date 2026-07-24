@@ -3,7 +3,7 @@ schema_version = 2
 widget_order = [ "desktop-widget-0000000000000001" ]
 
     [desktop_widgets.grid]
-    cell_size = 16
+    cell_size = 64
     major_interval = 4
     visible = true
 
@@ -12,16 +12,23 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     box_width = 0.0
     cx = 853.5
     cy = 533.5
-    output = "eDP-2"
     rotation = 0.0
     type = "fancy_audio_visualizer"
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
         background = false
-        background_opacity = 0.31
-        background_padding = 0
-        background_radius = 32
-        bloom_intensity = 0.0
+        background_color = "surface"
+        background_opacity = 0.80000000000000004
+        background_padding = 10
+        background_radius = 12
+        bar_width = 0.59999999999999998
+        bloom_intensity = 0.25
         fade_when_idle = true
-        rotation_speed = 0.0
+        inner_diameter = 0.69999999999999996
+        primary_color = "primary"
+        ring_opacity = 0.5
+        rotation_speed = 0.5
+        secondary_color = "secondary"
+        sensitivity = 1.0
         visualization_mode = "wave_rings"
+        wave_thickness = 0.69999999999999996
