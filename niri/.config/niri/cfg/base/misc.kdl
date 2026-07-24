@@ -24,6 +24,7 @@
         // [Settings]
         // gtk-im-module=fcitx
 
+        // TODO
         TERMINAL "kitty"
 
     }
