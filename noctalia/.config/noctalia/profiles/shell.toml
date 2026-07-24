@@ -3,7 +3,7 @@ app_icon_colorize     = false           # 在整个 Shell 中重新着色应用�
 
 [shell.panel]
 transparency_mode     = "soft"          # solid | soft | glass；控制浮动/居中面板的不透明度与卡片半透明度
-
+open_near_click_control_center = true
 
 # 会话面板
 [[shell.session.actions]]
