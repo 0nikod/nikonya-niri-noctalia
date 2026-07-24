@@ -24,6 +24,8 @@
         // [Settings]
         // gtk-im-module=fcitx
 
+        TERMINAL "kitty"
+
     }
 
     cursor {
