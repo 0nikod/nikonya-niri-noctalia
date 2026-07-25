@@ -57,6 +57,7 @@
     }
 
     // add special rules here
+    include "rules/desktop_lyrics.kdl"
     include "rules/osu.kdl"
     include "rules/noctalia.kdl"
     include "rules/steam.kdl"
