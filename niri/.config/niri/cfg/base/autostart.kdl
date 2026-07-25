@@ -4,4 +4,5 @@
     spawn-at-startup "noctalia"
     spawn-at-startup "fcitx5" "-d"
     spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
+    spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
     
