@@ -15,6 +15,15 @@
         opacity 0.9
     }
 
+    window-rule {
+        match is-floating=true
+
+        background-effect {
+            blur true
+            // xray false
+        }
+    }
+
     // we think that these rules are useful for most users, so don't modify it.
     // add custom rules in custom/rules.kdl
 
