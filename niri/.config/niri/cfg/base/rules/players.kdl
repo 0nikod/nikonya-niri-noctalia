@@ -1,0 +1,33 @@
+    // Open the Firefox picture-in-picture player as floating by default.
+    window-rule {
+        // This app-id regular expression will work for both:
+        // - host Firefox (app-id is "firefox")
+        // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+        // chromium 系的画中画，app-id 为空字符串
+        // 需要浏览器原生画中画，对于 bilibili 视频，右键视频两次后选择画中画
+        match app-id=r#"firefox$|org.mozilla.firefox$|zen$|^$"# title="^Picture-in-Picture$|^画中画$"
+
+        open-floating true
+        opacity 1.0
+        background-effect {
+            blur false
+            xray false
+        }
+
+        default-column-width { fixed 640; }
+        default-window-height { fixed 360; }
+
+        default-floating-position x=20 y=20 relative-to="bottom-right"
+
+    }
+
+    window-rule {
+        // TODO: more
+        match app-id=r#"^org\.mpv\.MPV$"#
+        
+        opacity 1.0
+        background-effect {
+            blur false
+            xray false
+        }
+    }
