@@ -3,4 +3,5 @@ autoload = false
 files = [
     "profiles/",
     "custom/",
+    "templates.toml",
 ]

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    width="30"
+    height="30"
+    viewBox="0 0 60 60"
+    xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter
+        id="shadow"
+        x="-0.2"
+        y="-0.2"
+        width="1.4718"
+        height="1.4718"
+        color-interpolation-filters="sRGB">
+
+      <feFlood
+          flood-color="{{ colors.shadow.default.hex }}"
+          flood-opacity="0.50"
+          result="flood" />
+
+      <feComposite
+          in="flood"
+          in2="SourceGraphic"
+          operator="in"
+          result="composite1" />
+
+      <feGaussianBlur
+          in="composite1"
+          stdDeviation="3"
+          result="blur" />
+
+      <feOffset
+          dx="2.8"
+          dy="2.8"
+          result="offset" />
+
+      <feComposite
+          in="SourceGraphic"
+          in2="offset"
+          operator="over"
+          result="composite2" />
+    </filter>
+  </defs>
+
+  <rect
+      x="10.5"
+      y="10.5"
+      width="39"
+      height="39"
+      rx="19"
+      ry="19"
+      fill="{{ colors.surface_container.default.hex }}"
+      stroke="{{ colors.outline_variant.default.hex }}"
+      stroke-width="1.2"
+      filter="url(#shadow)" />
+</svg>
