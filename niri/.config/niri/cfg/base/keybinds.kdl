@@ -257,7 +257,7 @@ binds {
     Mod+T                               { toggle-window-floating; }
 
     // Core Noctalia binds
-    Mod+B                           hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+B                               hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S                               hotkey-overlay-title="Open Control Center: noctalia controlCenter" { spawn-sh "noctalia msg panel-toggle control-center"; }
     // Alt+Tab                             hotkey-overlay-title="Open Window Switcher: noctalia window-switcher" { spawn-sh "noctalia msg window-switcher"; }
     // Niri has a built-in window switcher you might want to try it to see which one you prefer.

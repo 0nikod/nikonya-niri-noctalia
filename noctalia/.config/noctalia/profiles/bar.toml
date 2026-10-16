@@ -12,7 +12,7 @@ margin_ends = 0.0
 
 start = ["launcher", "workspaces", "media", "active_window"]
 center = ["clock"]
-end = ["tray", "clipboard" , "screenshot", "wallpaper", "network", "bluetooth", "volume", "battery", "notifications", "session"]
+end = ["tray", "screenshot", "wallpaper", "network", "bluetooth", "volume", "battery", "notifications", "session"]
 
 capsule                 = true
 capsule_fill            = "surface_variant"
